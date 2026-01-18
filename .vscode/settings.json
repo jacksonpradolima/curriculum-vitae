@@ -17,5 +17,7 @@
     "editor.defaultFormatter": "redhat.vscode-yaml",
     "editor.formatOnSave": true,
     "editor.autoIndent": "advanced"
-  }
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 10
 }

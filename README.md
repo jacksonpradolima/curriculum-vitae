@@ -38,6 +38,17 @@ pip install 'rendercv[full]'
 rendercv render Jackson_Prado_Lima_CV.yaml
 ```
 
+#### Live Preview in vscode: 
+
+```bash
+# Install RenderCV
+pip install 'rendercv[full]'
+
+# Edit the YAML file
+# Then generate outputs withh the watch mode
+rendercv render --watch Jackson_Prado_Lima_CV.yaml
+```
+
 ### Automatic Updates
 
 When you push changes to the `main` branch, GitHub Actions automatically:
