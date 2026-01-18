@@ -23,6 +23,6 @@
       }
     }
   },
-  "postCreateCommand": "pip install --upgrade pip && pip install rendercv",
+  "postCreateCommand": "pip install --upgrade pip && pip install 'rendercv[full]'",
   "remoteUser": "vscode"
 }

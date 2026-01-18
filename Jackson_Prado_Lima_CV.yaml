@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
 cv:
   name: Jackson Antonio do Prado Lima
   location: São Bento do Sul, Santa Catarina, Brazil
@@ -10,7 +11,7 @@ cv:
     - network: GitHub
       username: jacksonpradolima
   sections:
-    Education:
+    education:
       - institution: UFPR (Federal University of Paraná)
         area: Informatics
         degree: PhD
@@ -29,7 +30,7 @@ cv:
         start_date: 2010
         end_date: 2014
         location: Santa Catarina, Brazil
-    Experience:
+    experience:
       - company: UFPR (Federal University of Paraná)
         position: Lecturer
         location: Curitiba, Brazil
@@ -51,6 +52,12 @@ cv:
           - Worked at the Outsourcing Department of Scania Latin America with Microsoft .NET platform and Oracle Technology
 design:
   theme: classic
-  color: rgb(0,79,144)
-  font_family: "Latin Modern Serif"
-  page_size: a4paper
+  colors:
+    name: rgb(0, 79, 144)
+    section_titles: rgb(0, 79, 144)
+    links: rgb(0, 79, 144)
+  page:
+    size: a4
+locale:
+  language: english
+
