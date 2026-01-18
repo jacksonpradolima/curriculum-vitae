@@ -1,0 +1,56 @@
+cv:
+  name: Jackson Antonio do Prado Lima
+  location: São Bento do Sul, Santa Catarina, Brazil
+  email: jacksonpradolima@gmail.com
+  phone: "+55 41 988-213-968"
+  website: https://jacksonpradolima.github.io
+  social_networks:
+    - network: LinkedIn
+      username: pradolima
+    - network: GitHub
+      username: jacksonpradolima
+  sections:
+    Education:
+      - institution: UFPR (Federal University of Paraná)
+        area: Informatics
+        degree: PhD
+        start_date: 2017
+        end_date: present
+        location: Paraná, Brazil
+      - institution: UFPR (Federal University of Paraná)
+        area: Informatics
+        degree: M.S.
+        start_date: 2015
+        end_date: 2017
+        location: Paraná, Brazil
+      - institution: UDESC (Santa Catarina State University)
+        area: Information Systems
+        degree: B.S.
+        start_date: 2010
+        end_date: 2014
+        location: Santa Catarina, Brazil
+    Experience:
+      - company: UFPR (Federal University of Paraná)
+        position: Lecturer
+        location: Curitiba, Brazil
+        start_date: 2018-05
+        end_date: 2020-05
+        highlights: []
+      - company: UDESC (Santa Catarina State University)
+        position: Lecturer
+        location: São Bento do Sul, Brazil
+        start_date: 2018-02
+        end_date: 2018-05
+        highlights: []
+      - company: BPlus Tecnologia Ltda.
+        position: Developer
+        location: São Bento do Sul, Santa Catarina, Brazil
+        start_date: 2012-01
+        end_date: 2015-02
+        highlights:
+          - Worked at the Outsourcing Department of Scania Latin America with Microsoft .NET platform and Oracle Technology
+design:
+  theme: classic
+  color: rgb(0,79,144)
+  font_family: "Latin Modern Serif"
+  page_size: a4paper

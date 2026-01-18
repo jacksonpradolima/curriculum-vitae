@@ -1,0 +1,24 @@
+{
+  "RenderCV.pdfCompiler": "pdflatex",
+  "RenderCV.pdfWatcher": "onSave",
+  "RenderCV.livePreview": true,
+  "files.associations": {
+    "*.yaml": "yaml",
+    "*.yml": "yaml"
+  },
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/rendercv/rendercv/main/schema.json": [
+      "*_CV.yaml",
+      "*_cv.yaml", 
+      "CV.yaml",
+      "cv.yaml"
+    ]
+  },
+  "yaml.format.enable": true,
+  "yaml.validate": true,
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.formatOnSave": true,
+    "editor.autoIndent": "advanced"
+  }
+}
