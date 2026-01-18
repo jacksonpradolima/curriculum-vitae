@@ -5,8 +5,7 @@ on:
     branches:
       - main
     paths:
-      - '*.yaml'
-      - '*.yml'
+      - 'Jackson_Prado_Lima_CV.yaml'
       - '.github/workflows/generate-cv.yml'
   workflow_dispatch:
 
