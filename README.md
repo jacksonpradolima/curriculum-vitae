@@ -64,12 +64,12 @@ cv:
     - network: LinkedIn
       username: yourprofile
   sections:
-    Education:
+    education:
       - institution: University Name
         degree: PhD
         start_date: 2020
         end_date: present
-    Experience:
+    experience:
       - company: Company Name
         position: Job Title
         start_date: 2020-01
@@ -79,7 +79,9 @@ cv:
           - Achievement 2
 design:
   theme: classic
-  color: rgb(0,79,144)
+  colors:
+    name: rgb(0, 79, 144)
+    section_titles: rgb(0, 79, 144)
 ```
 
 ## Documentation

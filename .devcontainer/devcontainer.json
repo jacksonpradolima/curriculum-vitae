@@ -1,11 +1,6 @@
 {
   "name": "RenderCV Development",
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
-  "features": {
-    "ghcr.io/devcontainers-contrib/features/apt-packages:1": {
-      "packages": "texlive-full,git"
-    }
-  },
   "customizations": {
     "vscode": {
       "extensions": [
