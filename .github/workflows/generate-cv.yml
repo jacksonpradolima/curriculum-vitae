@@ -1,0 +1,138 @@
+name: Generate and Publish CV
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '*.yaml'
+      - '*.yml'
+      - '.github/workflows/generate-cv.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install RenderCV
+        run: |
+          pip install --upgrade pip
+          pip install 'rendercv[full]'
+
+      - name: Generate CV outputs
+        run: |
+          rendercv render Jackson_Prado_Lima_CV.yaml
+
+      - name: Prepare GitHub Pages content
+        run: |
+          mkdir -p public
+          cp rendercv_output/Jackson_Antonio_do_Prado_Lima_CV.pdf public/
+          cp rendercv_output/Jackson_Antonio_do_Prado_Lima_CV.html public/
+          cp rendercv_output/Jackson_Antonio_do_Prado_Lima_CV.md public/
+          
+          # Create index.html that redirects to the CV HTML
+          cat > public/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <meta http-equiv="refresh" content="0; url=Jackson_Antonio_do_Prado_Lima_CV.html">
+              <title>Jackson Antonio do Prado Lima - CV</title>
+              <style>
+                  body {
+                      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      height: 100vh;
+                      margin: 0;
+                      background-color: #f5f5f5;
+                  }
+                  .container {
+                      text-align: center;
+                      padding: 2rem;
+                      background: white;
+                      border-radius: 8px;
+                      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                  }
+                  h1 {
+                      color: #004f90;
+                      margin-bottom: 1rem;
+                  }
+                  p {
+                      color: #666;
+                      margin-bottom: 2rem;
+                  }
+                  .links {
+                      display: flex;
+                      gap: 1rem;
+                      justify-content: center;
+                      flex-wrap: wrap;
+                  }
+                  a {
+                      padding: 0.75rem 1.5rem;
+                      background-color: #004f90;
+                      color: white;
+                      text-decoration: none;
+                      border-radius: 4px;
+                      transition: background-color 0.2s;
+                  }
+                  a:hover {
+                      background-color: #003d70;
+                  }
+              </style>
+          </head>
+          <body>
+              <div class="container">
+                  <h1>Jackson Antonio do Prado Lima</h1>
+                  <p>Curriculum Vitae</p>
+                  <div class="links">
+                      <a href="Jackson_Antonio_do_Prado_Lima_CV.html">View Online</a>
+                      <a href="Jackson_Antonio_do_Prado_Lima_CV.pdf">Download PDF</a>
+                      <a href="Jackson_Antonio_do_Prado_Lima_CV.md">View Markdown</a>
+                  </div>
+              </div>
+              <script>
+                  // Redirect after 2 seconds if not clicked
+                  setTimeout(function() {
+                      window.location.href = 'Jackson_Antonio_do_Prado_Lima_CV.html';
+                  }, 2000);
+              </script>
+          </body>
+          </html>
+          EOF
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: generate
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

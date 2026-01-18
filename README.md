@@ -1,95 +1,61 @@
-# Curriculum Vitae - RenderCV
+# Jackson Antonio do Prado Lima - Curriculum Vitae
 
-This repository uses [RenderCV](https://github.com/rendercv/rendercv) to generate professional CVs/resumes from YAML files.
+This repository contains my CV, generated using [RenderCV](https://github.com/rendercv/rendercv) from YAML source files.
 
-## Features
+📄 **View my CV**: [https://jacksonpradolima.github.io](https://jacksonpradolima.github.io)
 
-- **RenderCV**: Modern CV generation using YAML instead of LaTeX
-- **VS Code Integration**: Live preview and auto-completion support
-- **Dev Container**: Ready-to-use development environment with all dependencies
+## Quick Links
 
-## Getting Started
+- 📥 [Download PDF](https://jacksonpradolima.github.io/Jackson_Antonio_do_Prado_Lima_CV.pdf)
+- 🌐 [View Online (HTML)](https://jacksonpradolima.github.io/Jackson_Antonio_do_Prado_Lima_CV.html)
+- 📝 [Markdown Version](https://jacksonpradolima.github.io/Jackson_Antonio_do_Prado_Lima_CV.md)
 
-### Using Dev Container (Recommended)
+## About This Repository
+
+This repository stores my CV in YAML format and automatically generates PDF, HTML, and Markdown versions using GitHub Actions. The generated files are published to GitHub Pages.
+
+## Editing the CV
+
+The CV source file is `Jackson_Prado_Lima_CV.yaml`. To make changes:
+
+### Option 1: Using Dev Container (Recommended)
 
 1. Install [VS Code](https://code.visualstudio.com/) and [Docker](https://www.docker.com/)
 2. Install the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 3. Open this repository in VS Code
-4. Click "Reopen in Container" when prompted (or use Command Palette: "Dev Containers: Reopen in Container")
-5. Wait for the container to build and install dependencies
+4. Click "Reopen in Container" when prompted
+5. Edit `Jackson_Prado_Lima_CV.yaml`
+6. The devcontainer includes all necessary tools and VS Code extensions
 
-### Local Installation
-
-If you prefer not to use Dev Containers:
+### Option 2: Local Editing
 
 ```bash
-# Install Python 3.10 or higher
-# Install RenderCV with full dependencies
+# Install RenderCV
 pip install 'rendercv[full]'
 
-# RenderCV uses Typst for PDF generation, which is included in rendercv[full]
-# No additional installation needed
-```
-
-## Usage
-
-### Generating a CV
-
-```bash
-# Render CV to PDF
+# Edit the YAML file
+# Then generate outputs locally:
 rendercv render Jackson_Prado_Lima_CV.yaml
-
-# Output will be in rendercv_output/ directory
 ```
 
-### Editing with Live Preview
+### Automatic Updates
 
-When using VS Code with the Dev Container:
+When you push changes to the `main` branch, GitHub Actions automatically:
+- Generates PDF, HTML, and Markdown versions
+- Publishes them to GitHub Pages
 
-1. Open the YAML CV file (e.g., `Jackson_Prado_Lima_CV.yaml`)
-2. The live preview should automatically activate
-3. Edit the YAML file and save to regenerate the PDF
+## Technical Details
 
-## CV File Structure
+- **Source Format**: YAML (RenderCV schema)
+- **PDF Generation**: Typst (via RenderCV)
+- **CI/CD**: GitHub Actions
+- **Hosting**: GitHub Pages
 
-CV files are in YAML format with the following structure:
+## Legacy Files
 
-```yaml
-cv:
-  name: Your Name
-  location: Your Location
-  email: your.email@example.com
-  phone: "+1234567890"
-  social_networks:
-    - network: LinkedIn
-      username: yourprofile
-  sections:
-    education:
-      - institution: University Name
-        degree: PhD
-        start_date: 2020
-        end_date: present
-    experience:
-      - company: Company Name
-        position: Job Title
-        start_date: 2020-01
-        end_date: 2022-12
-        highlights:
-          - Achievement 1
-          - Achievement 2
-design:
-  theme: classic
-  colors:
-    name: rgb(0, 79, 144)
-    section_titles: rgb(0, 79, 144)
-```
+Previous LaTeX-based CVs are preserved in the `academic/` and `public_tender/` directories for reference.
 
-## Documentation
+## More Information
 
 - [RenderCV Documentation](https://docs.rendercv.com/)
-- [RenderCV GitHub](https://github.com/rendercv/rendercv)
-- [VS Code Setup Guide](https://docs.rendercv.com/user_guide/how_to/set_up_vs_code_for_rendercv/)
-
-## Migration from LaTeX
-
-The previous LaTeX-based CVs are preserved in the `academic/` and `public_tender/` directories for reference.
+- [RenderCV GitHub Repository](https://github.com/rendercv/rendercv)
