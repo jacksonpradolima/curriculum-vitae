@@ -1,13 +1,10 @@
 {
-  "RenderCV.pdfCompiler": "pdflatex",
-  "RenderCV.pdfWatcher": "onSave",
-  "RenderCV.livePreview": true,
   "files.associations": {
     "*.yaml": "yaml",
     "*.yml": "yaml"
   },
   "yaml.schemas": {
-    "https://raw.githubusercontent.com/rendercv/rendercv/main/schema.json": [
+    "https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json": [
       "*_CV.yaml",
       "*_cv.yaml", 
       "CV.yaml",

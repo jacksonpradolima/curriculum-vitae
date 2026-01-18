@@ -24,17 +24,11 @@ If you prefer not to use Dev Containers:
 
 ```bash
 # Install Python 3.10 or higher
-# Install RenderCV
-pip install rendercv
+# Install RenderCV with full dependencies
+pip install 'rendercv[full]'
 
-# Install LaTeX (required for PDF generation)
-# On Ubuntu/Debian:
-sudo apt-get install texlive-full
-
-# On macOS:
-brew install --cask mactex
-
-# On Windows, install MiKTeX or TeX Live
+# RenderCV uses Typst for PDF generation, which is included in rendercv[full]
+# No additional installation needed
 ```
 
 ## Usage
