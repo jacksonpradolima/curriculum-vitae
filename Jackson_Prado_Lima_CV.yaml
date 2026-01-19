@@ -1,60 +1,403 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+# yaml-language-server: $schema=https://github.com/rendercv/rendercv/blob/main/schema.json?raw=true
+
 cv:
   name: Jackson Antonio do Prado Lima
-  location: São Bento do Sul, Santa Catarina, Brazil
-  email: jacksonpradolima@gmail.com
-  phone: "+55 41 988-213-968"
-  website: https://jacksonpradolima.github.io
+  headline: "Chief of Technology (CT) | PhD in AI & Software Engineering | R&D Strategist | Professor"
+  location: "São Bento do Sul, Santa Catarina, Brazil"
+  email: "jacksonpradolima@gmail.com"
+  phone: "tel:+5541988213968"
+  # website: "https://github.com/jacksonpradolima"
+
   social_networks:
     - network: LinkedIn
-      username: pradolima
+      username: "pradolima"
     - network: GitHub
-      username: jacksonpradolima
+      username: "jacksonpradolima"
+    - network: Google Scholar
+      username: "Kx0r5jkAAAAJ"
+    - network: ORCID
+      username: "0000-0003-4993-777X"
+    # - network: ResearchGate
+    #   username: "Jackson-Antonio-Do-Prado-Lima"
+
+  # Custom connections for Lattes platform
+  # custom_connections:
+  #   - placeholder: "Lattes"
+  #     url: "http://lattes.cnpq.br/3457149082225309"
+  #     fontawesome_icon: "graduation-cap"
+
   sections:
+    summary:
+      - "I sit at the rare intersection where Executive Strategy meets Ph.D. Rigor and Production-Grade Engineering. As a Hands-on Chief of Technology, I manage a distributed army of 50+ engineers and specialize in turning distressed technical environments into scalable, profitable engines. My mandate is efficiency: one example is when I slashed a client's cloud costs by 85% ($720k/year savings).  I am Technology Agnostic: I view languages as means to an end. Whether the solution requires Rust, Go, Python, or a legacy stack, I adapt immediately. My core skill is rapid technology acquisition to solve business problems. Simultaneously, I am a Scholar-Practitioner holding a Ph.D. in AI, bridging the gap between boardroom goals and server-room reality."
+
+    # technical_arsenal:
+    #   - label: "Leadership & Strategy"
+    #     details: "CTO/Executive Management (50+ reports), R&D Strategy, Cloud FinOps, Distressed Project Turnaround, Tech Due Diligence."
+    #   - label: "Cloud & DevOps"
+    #     details: "AWS, GCP, Kubernetes, Terraform, Docker, Suricata (Packet Mirroring), Cloud Armor, CI/CD (GitHub/GitLab)."
+    #   - label: "AI & Data Engineering"
+    #     details: "LLMs (Ollama/RAG), Vector DBs, ETL Pipelines (50+ datasets), Neural Networks, Search-Based Software Engineering."
+    #   - label: "Languages"
+    #     details: "Python (Django/Celery), Go, Node.js, Java, Elixir, C/C++ (Technology Agnostic Approach)."
+
+    # Selected Achievements:
+    #   - bullet: "Reduced a client's monthly cloud infrastructure cost from $70k to $10k (~85%), reported as ~$720k/year savings."
+    #   - bullet: "Led engineering turnarounds for distressed projects; built delivery playbooks, CI/CD automation, and observability baselines."
+    #   - bullet: "Designed R&D architecture proposals (e.g., CYPHER cyber-physical systems center proposal) and supported fundraising/partnership strategy."
+
+    # Key Skills:
+    #   - label: "Leadership & Strategy"
+    #     details: "CTO/CT leadership, program delivery, stakeholder management, R&D strategy, technical due diligence"
+    #   - label: "Cloud & DevOps"
+    #     details: "Terraform, CI/CD, cost optimization (FinOps), AWS + GCP, observability"
+    #   - label: "Security Engineering"
+    #     details: "Cloud Armor/WAF, IDS/Suricata, malware scanning (ClamAV), IAM hardening"
+    #   - label: "AI / Applied Research"
+    #     details: "Search-based software engineering, multi-armed bandits, test case prioritization, LLM-enabled workflows"
+    #   - label: "Software Engineering"
+    #     details: "API design (OpenAPI/Swagger), backend services, data pipelines, distributed systems"
+
     education:
-      - institution: UFPR (Federal University of Paraná)
-        area: Informatics
-        degree: PhD
-        start_date: 2017
-        end_date: present
-        location: Paraná, Brazil
-      - institution: UFPR (Federal University of Paraná)
-        area: Informatics
-        degree: M.S.
-        start_date: 2015
-        end_date: 2017
-        location: Paraná, Brazil
-      - institution: UDESC (Santa Catarina State University)
-        area: Information Systems
-        degree: B.S.
-        start_date: 2010
-        end_date: 2014
-        location: Santa Catarina, Brazil
-    experience:
-      - company: UFPR (Federal University of Paraná)
-        position: Lecturer
-        location: Curitiba, Brazil
-        start_date: 2018-05
-        end_date: 2020-05
-      - company: UDESC (Santa Catarina State University)
-        position: Lecturer
-        location: São Bento do Sul, Brazil
-        start_date: 2018-02
-        end_date: 2018-05
-      - company: BPlus Tecnologia Ltda.
-        position: Developer
-        location: São Bento do Sul, Santa Catarina, Brazil
-        start_date: 2012-01
-        end_date: 2015-02
+      - institution: "Federal University of Paraná (UFPR)"
+        location: "Curitiba, Paraná, Brazil"
+        degree: "PhD"
+        area: "Informatics"
+        start_date: 2017-03
+        end_date: 2021-12
         highlights:
-          - Worked at the Outsourcing Department of Scania Latin America with Microsoft .NET platform and Oracle Technology
+          - "Thesis: A Multi-Armed Bandit Approach for Enhancing Test Case Prioritization in Continuous Integration environments."
+          - "Advisor: Silvia Regina Vergilio."
+          - "Scholarship: CAPES (Brazil)."
+
+      - institution: "Federal University of Paraná (UFPR)"
+        location: "Curitiba, Paraná, Brazil"
+        degree: "MSc"
+        area: "Informatics"
+        start_date: 2015-02
+        end_date: 2017-02
+        highlights:
+          - "Dissertation: A hyper-heuristic and multi-objective approach for higher-order mutation testing."
+          - "Advisor: Silvia Regina Vergilio."
+          - "Scholarship: CAPES (Brazil)."
+
+      - institution: "Santa Catarina State University (UDESC)"
+        location: "Santa Catarina, Brazil"
+        degree: "BSc"
+        area: "Information Systems"
+        start_date: 2010-02
+        end_date: 2014-07
+        highlights:
+          - "Capstone: IMHOTEP — medical history management controlled by the patient."
+          - "Advisor: Prof. Dr. Luiz Claudio Dalmolin."
+
+    skills:
+      - label: Leadership & Executive Collaboration
+        details:
+          Strategic Planning • Product Discovery & Delivery • Roadmaps & OKRs • Cross-functional Leadership •
+          Technical Leadership & Career Mentoring • Hiring & Interview Design • Stakeholder Management •
+          C-level Relationships • Partner / Vendor Management • Advisor & Investor Relations
+
+      - label: Architecture & Engineering Practices
+        details: >-
+          Clean Architecture • Domain-Driven Design (DDD) • Event-Driven Design • Microservices • Modular Monoliths •
+          API-First Development • Contract Testing • Test-Driven Development (TDD) •
+          Code Reviews & Quality Gates • Observability by Design • Security by Design •
+          Performance & Reliability Engineering • Agile Delivery (Scrum/Kanban)
+
+      - label: Programming Languages
+        details: >-
+          Polyglot Programming • Python • Ruby • Java • JavaScript/TypeScript • C# • SQL • R • C/C++ • Bash •
+          PHP • Visual Basic/VBA
+
+      - label: Frameworks & Backend Technologies
+        details: >-
+          Django • FastAPI • Spring Boot • Node.js • REST • gRPC • GraphQL • OpenAPI/Swagger • OAuth2/OIDC • JWT •
+          Messaging & Pub/Sub patterns
+
+      - label: Frontend & UX Technologies
+        details: >-
+          Vue/Nuxt • React • Angular • Blazor • HTML • CSS • TailwindCSS • Material UI • Storybook
+
+      - label: Data Engineering & Analytics
+        details: >-
+          ETL/ELT Pipelines • Data Modeling • Data Warehousing • Data Lakes • Batch & Streaming Concepts •
+          Polars • Pandas • NumPy • PyArrow/ADBC • DuckDB • PostgreSQL • MongoDB •
+          Data Quality, Lineage & Schema Evolution • Reporting & BI Foundations
+
+      - label: AI/ML & Applied Research
+        details: >-
+          Neural Networks • LLMs • RAG • Embeddings • Vector Databases • NLP • Computer Vision •
+          Scikit-learn • TensorFlow • Keras • PyTorch • OpenCV •
+          Evolutionary Algorithms • Genetic Algorithms • Hill Climbing • Optimization • Multi-Armed Bandits
+
+      - label: DevOps, Cloud & Security
+        details: >-
+          Kubernetes • Docker • Terraform • CI/CD (GitLab/GitHub/Bitbucket) •
+          GCP • AWS • Artifact Registries • Secrets Management •
+          Observability (Logging, Monitoring, Tracing) • SRE Practices •
+          FinOps / Cost Optimization • Compliance-aware Engineering (HIPAA/LGPD mindset)
+
+      - label: Databases & Platforms
+        details: >-
+          PostgreSQL • MongoDB Atlas • Oracle (DB, Forms, Reports) • SQL Server •
+          GCP Cloud Storage • Artifact Registry •
+          Microsoft .NET ecosystem (ASP.NET MVC, Windows Forms, LINQ, TFS) •
+          Integration Patterns & Web Services
+
+      - label: Research Areas (SE & Testing)
+        details: >-
+          Search-Based Software Engineering (SBSE) • Regression Testing • Test Case Prioritization •
+          Continuous Integration (CI) • Mutation Testing • Empirical Software Engineering •
+          Experiment Design & Benchmarking • Optimization & Meta-heuristics
+
+    Professional Experience:
+      - company: "Brick Abode"
+        location: "Remote / USA"
+        position: "Chief of Technology (CT)"
+        start_date: "2022-12"
+        end_date: "present"
+        highlights:
+          - "**Strategic Impact:** Leading a distributed workforce of **50+ engineers**. Orchestrated a critical turnaround for a major client, slashing monthly cloud costs from **$70,000 to $10,000** ($720k/year savings) via aggressive architectural optimization."
+          - "**Fortress Security:** Designed offensive/defensive architectures on GCP/AWS, and automated quarantine workflows."
+          - "**Applied AI:** Engineered real-world solutions including self-hosted LLMs for internal privacy, RAG-based chatbots, and automated video dubbing pipelines with lip-sync."
+          - "**Data Engineering:** Architected custom ETL toolkits to standardize ingestion across many complex datasets."
+      - company: "Brick Abode"
+        location: "Remote / USA"
+        position: "IT Project Manager"
+        start_date: "2022-01"
+        end_date: "2022-12"
+        highlights:
+          - "Managed multi-client delivery programs; improved release cadence, backlog hygiene, and cross-team coordination."
+      - company: "Brick Abode"
+        location: "Remote / USA"
+        position: "Technical Lead"
+        start_date: "2021-09"
+        end_date: "2022-01"
+        highlights:
+          - "Led engineering execution and technical direction for client projects; improved CI reliability and testing automation."
+      - company: "Brick Abode"
+        location: "Remote / USA"
+        position: "Software Developer"
+        start_date: "2021-05"
+        end_date: "2021-09"
+        highlights:
+          - "Full-stack development and platform maintenance; supported delivery and technical debt reduction."
+
+      - company: "Lactec Institutes"
+        location: "Curitiba, Paraná, Brazil"
+        position: "R&D Technical Lead (.NET)"
+        start_date: "2015-04"
+        end_date: "2016-03"
+        highlights:
+          - "**Technical Leadership:** Operating well above the scope of a fellowship, served as the de facto Technical Lead for R&D projects in the Electrical Systems Division."
+          - "Built robust web solutions using ASP.NET, JavaScript, and SQL Server for the energy sector."
+
+      - company: "BPlus Tecnologia Ltda."
+        location: "São Bento do Sul, Santa Catarina, Brazil"
+        position: "Software Developer (High-Performance Track)"
+        start_date: "2012-01"
+        end_date: "2015-02"
+        highlights:
+          - "**10x Engineer:** Established a reputation for extreme efficiency. Developed a rapid migration strategy for Legacy Oracle Forms, turning a 1-week senior estimate into a **45-minute execution**."
+          - "**Critical Systems:** Entrusted by Scania Latin America to maintain KDEX (Critical Logistics) and optimize complex multi-table database layers."
+
+      - company: "Military Police of Santa Catarina (PMSC)"
+        location: "São Bento do Sul, Santa Catarina, Brazil"
+        position: "Administrative & Tech Operations Intern"
+        start_date: "2009-09"
+        end_date: "2011-09"
+        highlights:
+          - "**Crisis Resilience:** Maintained operational continuity during critical government database failures. Earned the trust of Senior Command (Colonels) as a technology advisor."
+
+    Academic Appointments & Teaching:
+      - company: "Federal University of Amazonas (UFAM)"
+        location: "Manaus, Amazonas, Brazil"
+        position: "Postgraduate Professor (SBSE)"
+        start_date: "2023-03"
+        end_date: "present"
+        highlights:
+          - "Elite Specialization: Leading the advanced module on Search-Based Software Testing for the IARTES Project (Artificial Intelligence for Software Test Engineering)."
+          - "The Intersection of AI & QA: Teaching the cutting-edge application of Evolutionary Algorithms and Optimization techniques (Genetic Algorithms, Hill Climbing) to automate test case generation and prioritization."
+          - "Engineering Impact: Empowering specialized software engineers to move beyond traditional testing, utilizing AI to solve hard-to-test scenarios and optimize quality assurance pipelines."
+
+      - company: "iCEV - Instituto de Ensino Superior"
+        location: "Teresina, Piaui, Brazil"
+        position: "Postgraduate Professor (AI & Neural Networks)"
+        start_date: "2025-08"
+        end_date: "present"
+        highlights:
+          - "Advanced Curriculum: Delivering the core module on Artificial Neural Networks (ANNs) for the Artificial Intelligence Postgraduate program."
+          - "Bridging Theory & Practice: Deconstructing complex architectures - from Multilayer Perceptrons and Backpropagation mathematics to modern Deep Learning strategies - focusing on how these models are applied in real-world engineering scenarios."
+          - "Mentorship: Guiding industry professionals in mastering the mathematical foundations required to build and optimize high-performance AI models."
+
+      - company: "Universidade da Regiao de Joinville (Univille)"
+        location: "São Bento do Sul, Santa Catarina, Brazil"
+        position: "Associate Professor"
+        start_date: "2025-02"
+        end_date: "2025-08"
+        highlights:
+          - "**R&D Strategic Leadership (CYPHER):** Spearheaded the conception and architecture of a **R$ 3 million (~$500k USD)** research center for Cyber-Physical Systems. Designed a high-performance environment utilizing **NVIDIA H200**, quadruped robots (Unitree), and Digital Twins (CARLA/Gazebo)."
+          - "**Advanced Innovation:** Proposed a novel validation framework for **ROS 2** systems, integrating **LLMs**, Neurosymbolic Reasoning, and Contextual Multi-Armed Bandits to automate safety testing in robotics."
+          - "**Institutional Success:** The project was fully approved during Univille's rigorous internal selection and passed technical admissibility, recognized for its high-impact potential and technical depth."
+          - "**Core Faculty:** Delivering advanced technical curriculum in **Object-Oriented Architecture** and **Modern Quality Assurance**, mentoring the next generation of software engineers."
+
+      - company: "Federal University of Paraná (UFPR)"
+        location: "Curitiba, Paraná, Brazil"
+        position: "Lecturer (Substitute Professor)"
+        start_date: "2018-05"
+        end_date: "2020-05"
+        highlights:
+          - "Core STEM Education & Computational Mathematics. Selected to deliver foundational curriculum for Engineering departments (Civil, Chemical, Surveying) and Exact Sciences."
+          - "Numerical Methods: Taught advanced algorithms for solving mathematical problems, bridging the gap between theoretical calculus and computational implementation."
+          - "Computer Programming: Mentored hundreds of students in algorithmic logic, Python, and C/C++ programming foundations."
+          - "Impact: Prepared future engineers to apply computational thinking in complex physical simulations."
+
+      - company: "Santa Catarina State University (UDESC)"
+        location: "São Bento do Sul, Santa Catarina, Brazil"
+        position: "Lecturer (Substitute Professor)"
+        start_date: "2018-02"
+        end_date: "2018-05"
+        highlights:
+          - "Software Engineering Foundations & Algorithms. Delivered core curriculum focused on both the methodological and technical aspects of software development."
+          - "Systems Analysis: Teaching the bridge between business needs and technical implementation. Focused on Requirements Engineering, Agile Methodologies (Scrum), and system modeling."
+          - "Data Structures II: Advanced instruction on performance optimization, tree structures, graphs, and algorithmic complexity (Big O)."
+
+    Scholarships & Funding:
+      - name: "PBEEE Merit Scholarship Program for Foreign Students (3B)"
+        date: "2020"
+        highlights:
+          - "Secured 2nd place in a highly competitive international selection"
+          - "*Note: Grant awarded but mobility restricted due to COVID-19 pandemic.*"
+
+      - name: "CNPq PhD Sandwich (SWE 2019)"
+        date: "2020"
+        highlights:
+          - "Selected for the prestigious Brazilian National Council for Scientific and Technological Development (CNPq) international research program."
+          - "*Note: Grant awarded but mobility restricted due to COVID-19 pandemic.*"
+
+      - name: "CAPES Doctoral Scholarship"
+        date: "2017-2021"
+        highlights:
+          - "Coordination for the Improvement of Higher Education Personnel (CAPES), Brazil."
+
+      - name: "CAPES Scholarship (MSc)"
+        date: "2015-2017"
+        highlights:
+          - "Coordination for the Improvement of Higher Education Personnel (CAPES), Brazil."
+
+      - name: "LACTEC Institutes Scholarship"
+        date: "2015-2016"
+        highlights:
+          - "Institutos LACTEC, Curitiba, Brazil."
+
+      - name: "UDESC Student Support Scholarship"
+        date: "Sep 2011 - Dec 2011"
+        highlights:
+          - "Santa Catarina State University (UDESC), Brazil."
+
+    Selected Publications:
+      - title: "A multi-armed bandit approach for test case prioritization in continuous integration environments"
+        authors:
+          - "***Jackson Antonio do Prado Lima***"
+          - "Silvia Regina Vergilio"
+        journal: "IEEE Transactions on Software Engineering"
+        date: "2020"
+        doi: 10.1109/TSE.2020.2992428
+
+      - title: "Test Case Prioritization in Continuous Integration environments: A systematic mapping study"
+        authors:
+          - "***Jackson Antonio do Prado Lima***"
+          - "Silvia Regina Vergilio"
+        journal: "Information and Software Technology"
+        date: "2020"
+        doi: 10.1016/j.infsof.2020.106268
+
+      - title: "Hyper-Heuristic Based Product Selection for Software Product Line Testing"
+        authors:
+          - "Thiago Nascimento Ferreira"
+          - "***Jackson Antonio do Prado Lima***"
+          - Andrei Strickler
+          - Josiel N Kuk
+          - "Silvia Regina Vergilio"
+          - Aurora Trinidad Ramirez Pozo
+        journal: "IEEE Computational Intelligence Magazine"
+        date: "2017"
+        doi: 10.1109/MCI.2017.2670461
+
+      - title: "On the use of contextual information for machine learning based test case prioritization in continuous integration development"
+        authors:
+          - Enrique A. da Roza
+          - "***Jackson Antonio do Prado Lima***"
+          - "Silvia Regina Vergilio"
+        journal: "Information and Software Technology"
+        date: "2024"
+        doi: 10.1016/j.infsof.2024.107444
+
+      - title: "A mapping study on mutation testing for mobile applications"
+        authors:
+          - Henrique Neves Silva
+          - "***Jackson Antonio do Prado Lima***"
+          - "Silvia Regina Vergilio"
+          - André Takeshi Endo
+        journal: "Software Testing, Verification and Reliability"
+        date: "2022"
+        doi: 10.1002/stvr.1801
+
+    Research Groups and Projects:
+      - name: "Software Engineering Research Group (GRES), UFPR"
+        date: "2015-Present"
+        highlights:
+          - "Research group membership; advisor/coordinator: Silvia Regina Vergilio."
+      - name: "Automating Software Engineering Activities with Computational Intelligence, UFPR"
+        date: "2019-2021"
+        highlights:
+          - "Research project participation."
+      - name: "EVOLUCAO, UFPR"
+        date: "2021"
+        highlights:
+          - "Research project/group activity; coordinator: Aurora Trinidad Ramirez Pozo."
+
+    Academic Service:
+      - bullet: "Reviewer: IEEE Transactions on Software Engineering (TSE)"
+      - bullet: "Reviewer: Journal of Systems and Software (JSS)"
+      - bullet: "Reviewer: Software Testing, Verification & Reliability (STVR)"
+      - bullet: "Reviewer: Software Quality Journal"
+      - bullet: "Reviewer: Arabian Journal for Science and Engineering (AJSE)"
+      - bullet: "Reviewer:  Journal of Software Engineering and Research Development (JSERD)"
+      - bullet: "Reviewer: 28th edition of the IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER, 2021)"
+      - bullet: "Reviewer: 31st International Conference on Software Engineering and Knowledge Engineering (SEKE. 2019)"
+      - bullet: "Organizer: ACM International Systems and Software Product Line Conference (SPLC)"
+
+    # Languages:
+    #   - label: "Portuguese"
+    #     details: "Native"
+    #   - label: "English"
+    #     details: "Full Professional"
+
+    Projects:
+      - name: "CYPHER (Center for Research in Cyber-Physical Systems and Society)"
+        date: "2025"
+        highlights:
+          - "R&D proposal architecture and technical plan for FAPESC 29/2025 (Multilab II)."
+
+      - name: "[GSP-Py](https://github.com/jacksonpradolima/gsp-py)"
+        date: "2017-present"
+        highlights:
+          - "A Python-powered library to mine sequential patterns in large datasets, based on the robust Generalized Sequence Pattern (GSP) algorithm. Ideal for market basket analysis, temporal mining, and user journey discovery."
+
+    invited_talks:
+      - reversed_number: "From UDESC Student to Architect of the Future: My Journey in Information Systems - Parque das Profissões - UDESC CEPLAN (2025)"
+      - reversed_number: Developing technological solutions in academia and how to apply them in industry - 2º Congresso iCEV de Direito, Negócios & Tecnologia (DNT) - iCEV (2023)
+      - reversed_number: Free solutions to start using today. - JMetal - FliSol - Festival Latinoamericano de INstlación de Software Libre (2020)
+      - reversed_number: Doctorate Direct from the Trenches - Seminário Henri Poincaré (UFPR) (2020)
+
+    Interests:
+      - bullet: "Taekwondo (black belt - 2nd Dan)"
+
 design:
   theme: classic
-  colors:
-    name: rgb(0, 79, 144)
-    section_titles: rgb(0, 79, 144)
-    links: rgb(0, 79, 144)
   page:
     size: a4
+
 locale:
   language: english
