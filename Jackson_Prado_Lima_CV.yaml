@@ -28,7 +28,8 @@ cv:
 
   sections:
     summary:
-      - "I sit at the rare intersection where Executive Strategy meets Ph.D. Rigor and Production-Grade Engineering. As a Hands-on Chief of Technology, I manage a distributed army of 50+ engineers and specialize in turning distressed technical environments into scalable, profitable engines. My mandate is efficiency: one example is when I slashed a client's cloud costs by 85% ($720k/year savings).  I am Technology Agnostic: I view languages as means to an end. Whether the solution requires Rust, Go, Python, or a legacy stack, I adapt immediately. My core skill is rapid technology acquisition to solve business problems. Simultaneously, I am a Scholar-Practitioner holding a Ph.D. in AI, bridging the gap between boardroom goals and server-room reality."
+      - "I sit at the rare intersection where Executive Strategy meets Ph.D. Rigor and Production-Grade Engineering. As a **Hands-on Chief of Technology**, I manage a distributed army of 50+ engineers and specialize in turning distressed technical environments into scalable, profitable engines - such as slashing a client's cloud costs by 85% ($720k/year savings). I am Technology Agnostic: I view languages as means to an end. Whether the solution requires Rust, Go, Python, or a legacy stack, I adapt immediately. My core skill is rapid technology acquisition to solve business problems."
+      - "Simultaneously, I am an active **Professor and Researcher**. Beyond holding a Ph.D. in Software Engineering & AI, I spearhead strategic R&D initiatives, recently architecting the CYPHER project - a high-performance Cyber-Physical Systems center designed for NVIDIA H200 clusters and robotics. My mandate is efficiency in both worlds: I leverage cutting-edge Evolutionary Algorithms and LLMs to solve business problems, bridging the gap between boardroom goals and server-room reality."
 
     # technical_arsenal:
     #   - label: "Leadership & Strategy"
@@ -264,24 +265,24 @@ cv:
 
     Scholarships & Funding:
       - name: "PBEEE Merit Scholarship Program for Foreign Students (3B)"
-        date: "2020"
+        date: 2020
         highlights:
           - "Secured 2nd place in a highly competitive international selection"
           - "*Note: Grant awarded but mobility restricted due to COVID-19 pandemic.*"
 
       - name: "CNPq PhD Sandwich (SWE 2019)"
-        date: "2020"
+        date: 2020
         highlights:
           - "Selected for the prestigious Brazilian National Council for Scientific and Technological Development (CNPq) international research program."
           - "*Note: Grant awarded but mobility restricted due to COVID-19 pandemic.*"
 
-      - name: "CAPES Doctoral Scholarship"
+      - name: "CAPES PhD Scholarship"
         date: "2017-2021"
         highlights:
           - "Coordination for the Improvement of Higher Education Personnel (CAPES), Brazil."
 
-      - name: "CAPES Scholarship (MSc)"
-        date: "2015-2017"
+      - name: "CAPES MSc Scholarship"
+        date: "2016-2017"
         highlights:
           - "Coordination for the Improvement of Higher Education Personnel (CAPES), Brazil."
 
@@ -295,22 +296,41 @@ cv:
         highlights:
           - "Santa Catarina State University (UDESC), Brazil."
 
-    Selected Publications:
+    Main Publications (_sorted by relevance_):
       - title: "A multi-armed bandit approach for test case prioritization in continuous integration environments"
         authors:
           - "***Jackson Antonio do Prado Lima***"
           - "Silvia Regina Vergilio"
         journal: "IEEE Transactions on Software Engineering"
-        date: "2020"
+        date: 2020
         doi: 10.1109/TSE.2020.2992428
+
+      - title: "Cost-effective learning-based strategies for test case prioritization in continuous integration of highly-configurable software"
+        authors:
+          - "***Jackson Antonio do Prado Lima***"
+          - Willian D. F. Mendonça
+          - "Silvia Regina Vergilio"
+          - Wesley K. G. Assunção
+        journal: "Empirical Software Engineering"
+        date: 2022
+        doi: 10.1007/s10664-021-10093-3
 
       - title: "Test Case Prioritization in Continuous Integration environments: A systematic mapping study"
         authors:
           - "***Jackson Antonio do Prado Lima***"
           - "Silvia Regina Vergilio"
         journal: "Information and Software Technology"
-        date: "2020"
+        date: 2020
         doi: 10.1016/j.infsof.2020.106268
+
+      - title: "On the use of contextual information for machine learning based test case prioritization in continuous integration development"
+        authors:
+          - Enrique A. da Roza
+          - "***Jackson Antonio do Prado Lima***"
+          - "Silvia Regina Vergilio"
+        journal: "Information and Software Technology"
+        date: 2024
+        doi: 10.1016/j.infsof.2024.107444
 
       - title: "Hyper-Heuristic Based Product Selection for Software Product Line Testing"
         authors:
@@ -321,17 +341,18 @@ cv:
           - "Silvia Regina Vergilio"
           - Aurora Trinidad Ramirez Pozo
         journal: "IEEE Computational Intelligence Magazine"
-        date: "2017"
+        date: 2017
         doi: 10.1109/MCI.2017.2670461
 
-      - title: "On the use of contextual information for machine learning based test case prioritization in continuous integration development"
+      - title: "Deriving products for variability test of Feature Models with a hyper-heuristic approach"
         authors:
-          - Enrique A. da Roza
+          - Andrei Strickler
           - "***Jackson Antonio do Prado Lima***"
           - "Silvia Regina Vergilio"
-        journal: "Information and Software Technology"
-        date: "2024"
-        doi: 10.1016/j.infsof.2024.107444
+          - Aurora Trinidad Ramirez Pozo
+        journal: "Applied Soft Computing"
+        date: 2016
+        doi: 10.1016/j.asoc.2016.07.059
 
       - title: "A mapping study on mutation testing for mobile applications"
         authors:
@@ -340,8 +361,16 @@ cv:
           - "Silvia Regina Vergilio"
           - André Takeshi Endo
         journal: "Software Testing, Verification and Reliability"
-        date: "2022"
+        date: 2022
         doi: 10.1002/stvr.1801
+
+      - title: "A systematic mapping study on higher order mutation testing"
+        authors:
+          - "***Jackson Antonio do Prado Lima***"
+          - "Silvia Regina Vergilio"
+        journal: "Journal of Systems and Software"
+        date: 2019
+        doi: 10.1016/j.jss.2019.04.031
 
     Research Groups and Projects:
       - name: "Software Engineering Research Group (GRES), UFPR"
@@ -358,15 +387,44 @@ cv:
           - "Research project/group activity; coordinator: Aurora Trinidad Ramirez Pozo."
 
     Academic Service:
-      - bullet: "Reviewer: IEEE Transactions on Software Engineering (TSE)"
-      - bullet: "Reviewer: Journal of Systems and Software (JSS)"
-      - bullet: "Reviewer: Software Testing, Verification & Reliability (STVR)"
-      - bullet: "Reviewer: Software Quality Journal"
-      - bullet: "Reviewer: Arabian Journal for Science and Engineering (AJSE)"
-      - bullet: "Reviewer:  Journal of Software Engineering and Research Development (JSERD)"
-      - bullet: "Reviewer: 28th edition of the IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER, 2021)"
-      - bullet: "Reviewer: 31st International Conference on Software Engineering and Knowledge Engineering (SEKE. 2019)"
-      - bullet: "Organizer: ACM International Systems and Software Product Line Conference (SPLC)"
+      - company: "IEEE"
+        position: "Reviewer"
+        start_date: "2020-11"
+        highlights:
+          - "Selected as a technical evaluator for the IEEE Transactions on Software Engineering (TSE), the flagship journal in the field, and the 28th edition of the IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER, 2021). Responsible for critiquing experimental designs and validating the industrial applicability of state-of-the-art research before publication."
+
+      - company: "Elsevier"
+        position: "Reviewer"
+        start_date: "2020-09"
+        highlights:
+          - "Reviewer for the Journal of Systems and Software (JSS). Tasked with assessing complex studies on software architecture, systems engineering, and the practical application of AI in software development life cycles."
+
+      - company: "Wiley"
+        position: "Reviewer"
+        start_date: "2020-11"
+        highlights:
+          - "Reviewer for the Software Testing, Verification & Reliability (STVR) journal. Focused on the rigorous assessment of novel testing methodologies, automated verification techniques, and reliability models for critical systems."
+
+      - company: "Springer Nature"
+        position: "Reviewer"
+        start_date: "2020-08"
+        highlights:
+          - "Contributed to the scientific integrity of the Software Quality Journal and the Arabian Journal for Science and Engineering (AJSE). Evaluated methodologies for software quality assurance and advanced engineering applications."
+
+      - company: "Brazilian Computer Society - SBC"
+        position: "Reviewer"
+        start_date: "2020-04"
+        highlights:
+          - "Reviewer for the Journal of Software Engineering and Research Development (JSERD), ensuring high standards for research advancing the Brazilian and international software engineering communities."
+      # - bullet: "Reviewer: IEEE Transactions on Software Engineering (TSE)"
+      # - bullet: "Reviewer: Journal of Systems and Software (JSS)"
+      # - bullet: "Reviewer: Software Testing, Verification & Reliability (STVR)"
+      # - bullet: "Reviewer: Software Quality Journal"
+      # - bullet: "Reviewer: Arabian Journal for Science and Engineering (AJSE)"
+      # - bullet: "Reviewer:  Journal of Software Engineering and Research Development (JSERD)"
+      # - bullet: "Reviewer: 28th edition of the IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER, 2021)"
+      # - bullet: "Reviewer: 31st International Conference on Software Engineering and Knowledge Engineering (SEKE. 2019)"
+      # - bullet: "Organizer: ACM International Systems and Software Product Line Conference (SPLC)"
 
     # Languages:
     #   - label: "Portuguese"
@@ -376,20 +434,20 @@ cv:
 
     Projects:
       - name: "CYPHER (Center for Research in Cyber-Physical Systems and Society)"
-        date: "2025"
+        date: 2025
         highlights:
           - "R&D proposal architecture and technical plan for FAPESC 29/2025 (Multilab II)."
 
       - name: "[GSP-Py](https://github.com/jacksonpradolima/gsp-py)"
         date: "2017-present"
         highlights:
-          - "A Python-powered library to mine sequential patterns in large datasets, based on the robust Generalized Sequence Pattern (GSP) algorithm. Ideal for market basket analysis, temporal mining, and user journey discovery."
+          - "A Python-powered Open-Source Library to mine sequential patterns in large datasets, based on the robust Generalized Sequence Pattern (GSP) algorithm. Ideal for market basket analysis, temporal mining, and user journey discovery."
 
     invited_talks:
-      - reversed_number: "From UDESC Student to Architect of the Future: My Journey in Information Systems - Parque das Profissões - UDESC CEPLAN (2025)"
-      - reversed_number: Developing technological solutions in academia and how to apply them in industry - 2º Congresso iCEV de Direito, Negócios & Tecnologia (DNT) - iCEV (2023)
-      - reversed_number: Free solutions to start using today. - JMetal - FliSol - Festival Latinoamericano de INstlación de Software Libre (2020)
-      - reversed_number: Doctorate Direct from the Trenches - Seminário Henri Poincaré (UFPR) (2020)
+      - bullet: "From UDESC Student to Architect of the Future: My Journey in Information Systems - Parque das Profissões - UDESC CEPLAN (2025)"
+      - bullet: "Developing technological solutions in academia and how to apply them in industry - 2º Congresso iCEV de Direito, Negócios & Tecnologia (DNT) - iCEV (2023)"
+      - bullet: "Free solutions to start using today. - JMetal - FliSol - Festival Latinoamericano de INstlación de Software Libre (2020)"
+      - bullet: "Doctorate Direct from the Trenches - Seminário Henri Poincaré (UFPR) (2020)"
 
     Interests:
       - bullet: "Taekwondo (black belt - 2nd Dan)"
